@@ -13,6 +13,11 @@ interface SVGAPlayerState {
   toFrame: number
   currentState: string
   toPercentage: number
+  /**
+   * 循环次数，0为无限循环
+   * @default 0
+   */
+  loops?: number
 }
 export default class SVGAPlayer extends React.Component<
   SVGAPlayerProps,
